@@ -1,0 +1,4 @@
+---
+# vars file for LoadBalancer
+
+C: "haproxy"
