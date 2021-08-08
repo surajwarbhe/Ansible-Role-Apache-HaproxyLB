@@ -1,0 +1,23 @@
+---
+# tasks file for webserver
+
+- name: "Installation of HTTPD Software"
+  package:
+          name: "{{A}}"
+          state: present
+
+- name: "Installation of PHP Software"
+  package:
+          name: "{{B}}"
+          state: present
+
+- name: "Copying Web Pages"
+  copy:
+          src: "index.php"
+          dest: "/var/www/html/index.php"
+
+- name: "Starting HTTPD services"
+  service:
+          name: "httpd"
+          state: restarted
+ 

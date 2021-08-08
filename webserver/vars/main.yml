@@ -1,0 +1,6 @@
+---
+# vars file for webserver
+
+A: "httpd"
+
+B: "php"
